@@ -1,1 +1,110 @@
 # test
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+  text-align: left;    
+}
+</style>
+<body>
+<form  id="orderForm1 "action="http://203.64.84.113/x/RQ_RS.aspx" method="post">
+
+
+<h1>中醫診所病歷表</h1>
+<table style="width:80%">
+  <tr>
+    <th colspan="2"> 初診日期：<input type="date" name=初診日期"></th>
+    <th colspan="2"> 病歷號碼:<input type="text" name="病歷號碼"></th>
+  </tr>
+  <tr>
+    <td colspan="2">姓名:<input type="text" name="姓名"> <input type="radio" name="性別" value="女">女  <input type="radio" name="性別" value="男"> 男 </td>
+    <td colspan="2"> 身分證字號:<input type="text" name="身分證字號"> </td>
+  </tr>
+   <tr>
+    <td colspan="2">出生: <input type="date" name="出生"></td>
+    <td colspan="2">電話:<input type="text" name="電話"></td>
+  </tr>
+  <tr>
+    <td colspan="1">婚姻:<input type="radio" name="婚姻" value="已婚">已婚  <input type="radio" name="婚姻" value="未婚"> 未婚 </td>
+    <td colspan="1">職業:<input type="text" name="職業"></td>
+    <td colspan="2">手機:<input type="text" name="手機"></td>
+  </tr>
+   <tr>
+    <td>血型:<input type="text" name="血型">公分</td>
+    <td>身高:<input type="text" name="身高">公斤</td>
+    <td>體重:<input type="text" name="體重"></td>
+	<td>緊急聯絡人:<input type="text" name="緊急聯絡人"></td>
+  </tr>
+ <tr>
+    <td colspan="4"><input type="text" name="縣市">縣市<input type="text" name="區鄉鎮市">區鄉鎮市<input type="text" name="村里">村里<input type="text" name="路街">路街   
+					<input type="text" name="段">段<input type="text" name="巷">巷<input type="text" name="弄">弄<input type="text" name="號">號</td>
+   </tr>
+  <tr>
+    <td colspan="2">主訴:<input type="text" name="主訴"></td>
+    <td colspan="2">已多久:<input type="text" name="已多久"></td>
+  </tr>
+   <tr>
+    <td colspan="1">個人史</td>
+    <td colspan="3">過敏藥物:<input type="text" name="過敏藥物">過敏食物:<input type="text" name="過敏食物"><br>
+					飲食:<input type="checkbox" name="飲食" value="全素">全素<input type="checkbox" name="飲食" value="奶蛋素">奶蛋素<input type="checkbox" name="飲食" value="清淡">清淡<input type="checkbox" name="飲食" value="辛辣">辛辣
+						 <input type="checkbox" name="飲食" value="冷飲冰品">冷飲冰品<input type="checkbox" name="飲食" value="咖啡">咖啡<input type="checkbox" name="飲食" value="茶">茶<input type="checkbox" name="飲食" value="其他">其他:<input type="text" name="飲食"><br>
+					抽菸:<input type="radio" name="抽菸" value="無">無  <input type="radio" name="抽菸" value="有">有<input type="text" name="包/天">包/天，已抽<input type="text" name="幾年">幾年  <br>
+					喝酒:<input type="radio" name="喝酒" value="無">無  <input type="radio" name="喝酒" value="有">有，已有<input type="text" name="幾年">幾年 <br>
+					運動:<input type="radio" name="運動" value="無">無固定運動 <input type="radio" name="運動" value="有"> 有固定運動
+  </tr>
+  <tr>
+    <td colspan="1">過去病史</td>
+    <td colspan="3"><input type="checkbox" name="過去病史" value="糖尿病">糖尿病<input type="checkbox" name="過去病史" value="高血壓">高血壓<input type="checkbox" name="過去病史" value="心臟病">心臟病
+					<input type="checkbox" name="過去病史" value="腦中風">腦中風<input type="checkbox" name="過去病史" value="B型肝炎">B型肝炎<input type="checkbox" name="過去病史" value="其他">其他<input type="text" name="過去病史">
+  </tr>
+  <tr>
+    <td colspan="1">家族病史</td>
+    <td colspan="3">父:<input type="checkbox" name="家族病史父" value="糖尿病">糖尿病<input type="checkbox" name="家族病史父" value="高血壓">高血壓<input type="checkbox" name="家族病史父" value="心臟病">心臟病
+					   <input type="checkbox" name="家族病史父" value="腦中風">腦中風<input type="checkbox" name="家族病史父" value="B型肝炎">B型肝炎<input type="checkbox" name="家族病史父" value="其他">其他<input type="text" name="家族病史父"><br>
+					母:<input type="checkbox" name="家族病史母" value="糖尿病">糖尿病<input type="checkbox" name="家族病史母" value="高血壓">高血壓<input type="checkbox" name="家族病史母" value="心臟病">心臟病
+					   <input type="checkbox" name="家族病史母" value="腦中風">腦中風<input type="checkbox" name="家族病史母" value="B型肝炎">B型肝炎<input type="checkbox" name="家族病史母" value="其他">其他<input type="text" name="家族病史母">
+  </tr>
+  <tr>
+    <td colspan="1">日常<br>(複選)</td>
+    <td colspan="3">睡眠：<input type="text" name="上床時間">幾點上床<input type="text" name="下床時間">幾點下床，一天睡<input type="text" name="睡眠時數">幾小時<input type="radio" name="睡眠品質" value="尚可">尚可<br><input type="radio" name="睡眠品質" value="差">難以入眠，需翻覆
+						  <input type="text" name="難以入眠，需翻覆小時數">小時<input type="checkbox" name="睡眠狀況需" value="服助眠藥">服助眠藥<input type="checkbox" name="睡眠狀況" value="易醒">易醒<input type="checkbox" name="睡眠狀況" value="醒後不易再入眠">醒後不易再入眠
+						  <input type="checkbox" name="睡眠狀況" value="淺眠">淺眠<input type="checkbox" name="睡眠狀況" value="多夢">多夢<input type="checkbox" name="睡眠狀況" value="磨牙">磨牙<br>
+					
+					胃口：<input type="checkbox" name="食慾差" value="">食慾差<input type="checkbox" name="無飢餓感" value="">無飢餓感<input type="checkbox" name="胃脹" value="">胃脹<input type="checkbox" name="腹脹" value="">腹脹
+						  <input type="checkbox" name="胃酸逆流" value="胃酸逆流">胃酸逆流<input type="checkbox" name="打嗝" value="">打嗝<input type="checkbox" name="噯氣" value="">噯氣<input type="checkbox" name="噁心" value="">噁心
+						  <input type="checkbox" name="嘔吐" value="">嘔吐<input type="checkbox" name="渴而多飲" value="">渴而多飲<input type="checkbox" name="口乾" value="">口乾<input type="checkbox" name="口淡無味" value="">口淡無味
+						  <input type="checkbox" name="口苦" value="">口苦<br><input type="checkbox" name="口甜" value="">口甜<input type="checkbox" name="口鹹" value="">口鹹
+						  <input type="checkbox" name="口黏膩" value="">口黏膩<input type="checkbox" name="口酸" value="">口酸<br>
+					
+					大便：每<input type="text" name="每天">天，<input type="text" name="幾次">次
+						  <input type="checkbox" name="大便條狀" value="">條狀<input type="checkbox" name="大便很粗大" value="">很粗大<input type="checkbox" name="大便成小丸" value="">成小丸<input type="checkbox" name="大便細小" value="">細小
+						  <input type="checkbox" name="大便很硬" value="">很硬<input type="checkbox" name="大便常泥爛" value="">常泥爛<input type="checkbox" name="大便常鬆散" value="">常鬆散<input type="checkbox" name="大便量少" value="">量少<br>
+						  <input type="checkbox" name="大便很用力才嗯得出" value="">很用力才嗯得出<input type="checkbox" name="大便先硬後軟" value="">先硬後軟<input type="checkbox" name="大便帶血" value="">帶血<input type="checkbox" name="大便有解不淨感" value="">有解不淨感
+						  <input type="checkbox" name="大便排氣多" value="">排氣多<input type="checkbox" name="大便失禁" value="">大便失禁<br>
+					
+					小便：每天約<input type="text" name="幾次">次
+						  <input type="checkbox" name="小便每次尿量適中" value="">每次尿量適中<input type="checkbox" name="小便尿量偏少" value="">尿量偏少<input type="checkbox" name="小便尿量偏多" value="">尿量偏多<input type="checkbox" name="小便顏色清白或淡黃" value="">顏色清白或淡黃 
+						  <input type="checkbox" name="小便很黃，像茶水" value="">很黃，像茶水<input type="checkbox" name="小便咖啡色" value="">咖啡色<input type="checkbox" name="小便帶血絲" value="">帶血絲<input type="checkbox" name="小便渾濁或起泡泡" value="">渾濁或起泡泡
+						  <input type="checkbox" name="小便味道很重" value="">味道很重<input type="checkbox" name="小便尿時刺痛" value="">尿時刺痛<input type="checkbox" name="小便有解不淨感" value="">有解不淨感<input type="checkbox" name="小便失禁" value="">小便失禁<br>
+					
+					疲倦：<input type="checkbox" name="" value="容易疲倦">容易疲倦<input type="checkbox" name="疲倦時段" value="早起特別累">早起特別累<input type="checkbox" name="疲倦時段" value="傍晚特別累">傍晚特別累<input type="checkbox" name="疲倦時段" value="整天都累">整天都累
+						  <input type="checkbox" name="疲倦時段其它" value="其它時段">其它時段<input type="text" name="">特別累<input type="checkbox" name="" value="容易腰痠">容易腰痠<input type="checkbox" name="" value="常容易背痛">容易背痛<br><input type="checkbox" name="" value="腹部有下墜感">腹部有下墜感
+						  <input type="checkbox" name="" value="身體沉重感">身體沉重感<input type="checkbox" name="" value="易手足冰冷">易手足冰冷
+	</td>
+  </tr>
+</table>
+
+<input type="submit" value="提交">
+</form> 
+
+
+</body>
+</html>
