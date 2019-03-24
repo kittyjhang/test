@@ -10,7 +10,7 @@ function one()
     return false;
   }
    var y = document.myForm.telecom.value;
-   if (y != "0"||"1"||"2"||"3"||"4"||"5"||"6"||"7"||"8"||"9") 
+   if (y <'0'|| y>'9') 
   {
     alert("電話必為數字");
     
