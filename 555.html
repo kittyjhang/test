@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function one() 
+{
+	var cars =["A","B","O","AB"];
+	var text="";
+	var i;
+	for(i=0;i<cars.length;i++)
+	{
+		text +="<li>";	
+		text +=cars[i];
+		text +="</li>";
+	}
+	document.myForm("demo").value.cars=text;
+}
+function two()
+{
+	var x = document.myForm.heigh.value;
+	if (x <'0'|| x>'9') 
+	{
+		alert("身高必為數字");
+	}
+	var y = document.myForm.weight.value;
+	if (y <'0'|| y>'9') 
+	{
+		alert("體重必為數字");
+	}
+	z=y/(x*x);
+	window.alert(z);
+}
+</script>
+</head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+  text-align: left;    
+}
+</style>
+<body>
+<form name="myForm" name="form" action="http://203.64.84.113/x/RQ_RS.aspx" method="post">
+<h1>中醫診所病歷表</h1>
+<table style="width:80%">
+  <tr>
+    <th colspan="2"> 初診日期：<input type="date" name=初診日期"value=""></th>
+    <th colspan="2"> 病歷號碼:<input type="text" name="病歷號碼"value=""></th>
+  </tr>
+  <tr>
+    <td colspan="2">姓名:<input type="text" name="姓名"> <input type="radio" name="性別" value="女">女  <input type="radio" name="性別" value="男"> 男 </td>
+    <td colspan="2"> 身分證字號:<input type="text" name="身分證字號"value=""> </td>
+  </tr>
+   <tr>
+    <td colspan="2">出生: <input type="date" name="出生"value=""></td>
+    <td colspan="2">電話:<input type="text" name="電話"value=""></td>
+  </tr>
+  <tr>
+    <td colspan="1">婚姻:<input type="radio" name="婚姻" value="已婚">已婚  <input type="radio" name="婚姻" value="未婚"> 未婚 </td>
+    <td colspan="1">職業:<input type="text" name="職業" value=""></td>
+    <td colspan="2">手機:<input type="text" name="手機"value=""></td>
+  </tr>
+   <tr>
+    <td>血型:
+		<select name="cars">
+		<option value="A">A</option>
+		<option value="B">B</option>
+		<option value="O">O</option>
+  		<option value="AB">AB</option>
+		</select></td>
+	<td>身高:<input type="text" name="身高"value="">公分</td>
+    <td>體重:<input type="text" name="體重"value="">公斤</td>
+	<td>緊急聯絡人:<input type="text" name="緊急聯絡人"></td>
+  </tr>
+ <tr>
+    <td colspan="4">地址:<input type="text" name="縣市"value="">縣市<input type="text" name="區鄉鎮市"value="">區鄉鎮市<input type="text" name="路街"value="">路街   
+					<input type="text" name="段巷弄號"value="">段巷弄號</td>
+   </tr>
+  <tr>
+    <td colspan="2">主訴:<input type="text" name="主訴"value=""></td>
+    <td colspan="2">已多久:<input type="text" name="已多久"value=""></td>
+  </tr>
+   <tr>
+    <td colspan="1">個人史</td>
+    <td colspan="3">過敏藥物:<input type="text" name="過敏藥物">過敏食物:<input type="text" name="過敏食物"><br>
+					飲食:<input type="checkbox" name="飲食1" value="全素">全素<input type="checkbox" name="飲食2" value="奶蛋素">奶蛋素<input type="checkbox" name="飲食3" value="清淡">清淡<input type="checkbox" name="飲食4" value="辛辣">辛辣
+						 <input type="checkbox" name="飲食6" value="冷飲冰品">冷飲冰品<input type="checkbox" name="飲食7" value="咖啡">咖啡<input type="checkbox" name="飲食8" value="茶">茶<input type="checkbox" name="飲食其他" value="其他">其他:<input type="text" name="飲食"><br>
+					抽菸:<input type="radio" name="抽菸" value="無">無  <input type="radio" name="抽菸" value="有">有<input type="text" name="包/天">包/天，已抽<input type="text" name="幾年">幾年  <br>
+					喝酒:<input type="radio" name="喝酒" value="無">無  <input type="radio" name="喝酒" value="有">有，已有<input type="text" name="幾年">幾年 <br>
+					運動:<input type="radio" name="運動" value="無">無固定運動 <input type="radio" name="運動" value="有"> 有固定運動
+  </tr>
+  <tr>
+    <td colspan="1">過去病史</td>
+    <td colspan="3"><input type="checkbox" name="過去病史1" value="糖尿病">糖尿病<input type="checkbox" name="過去病史2" value="高血壓">高血壓<input type="checkbox" name="過去病史3" value="心臟病">心臟病
+					<input type="checkbox" name="過去病史4" value="腦中風">腦中風<input type="checkbox" name="過去病史5" value="B型肝炎">B型肝炎<input type="checkbox" name="過去病史其他" value="其他">其他<input type="text" name="過去病史">
+  </tr>
+  <tr>
+    <td colspan="1">家族病史</td>
+    <td colspan="3">父:<input type="checkbox" name="家族病史父1" value="糖尿病">糖尿病<input type="checkbox" name="家族病史父2" value="高血壓">高血壓<input type="checkbox" name="家族病史父3" value="心臟病">心臟病
+					   <input type="checkbox" name="家族病史父4" value="腦中風">腦中風<input type="checkbox" name="家族病史父5" value="B型肝炎">B型肝炎<input type="checkbox" name="家族病史父其他" value="其他">其他<input type="text" name="家族病史父"><br>
+					母:<input type="checkbox" name="家族病史母1" value="糖尿病">糖尿病<input type="checkbox" name="家族病史母2" value="高血壓">高血壓<input type="checkbox" name="家族病史母3" value="心臟病">心臟病
+					   <input type="checkbox" name="家族病史母4" value="腦中風">腦中風<input type="checkbox" name="家族病史母5" value="B型肝炎">B型肝炎<input type="checkbox" name="家族病史母其他" value="其他">其他<input type="text" name="家族病史母">
+  </tr>
+				
+</table>
+	<input type="submit" value="提交">
+	<br>請輸入身高體重,計算BMI:<br>
+	身高:<input type="text" name="heigh"value="">請輸入公尺<br>
+    體重:<input type="text" name="weight"value="">公斤<br>
+	<input type="button" onclick="two()" value="click2">
+
+</form> 
+</body>
+</html>
+    
